@@ -1,4 +1,5 @@
 *.replit
+*.class
 **/*
 !**/*.go
 !**/*.java
