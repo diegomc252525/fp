@@ -1,6 +1,5 @@
-*.replit
 *.class
-
+*.replit
 **/*
 !**/*.go
 !**/*.java
@@ -10,4 +9,4 @@
 !**/*.scala
 !**/*.cpp
 !**/*.tk
-!**/
+
