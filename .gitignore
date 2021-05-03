@@ -1,6 +1,8 @@
 *.class
 *.replit
 **/*
+!LICENSE
+!**/*md
 !**/*go
 !**/*scala
 !**/*java
