@@ -58,9 +58,9 @@ def fun4():
 	hora=int(input(d("que hora es para poder cobrarle?: ")))
 	if hora <=2:
 		print(d("su costo a pagar seria $5.00"))
-	elif hora>2 & hora<=5:
+	elif hora>2 and hora<=5:
 		print(d("su costo a pagar seria $4.00"))
-	elif hora>5 & hora<=10:
+	elif hora>5 and hora<=10:
 		print(d("su costo a pagar seria $3.00"))
 	elif hora>10:
 		print(d("su costo a pagar seria $2.00"))
@@ -110,6 +110,7 @@ def fun6():
 #7)-------------------------------------------------------
 def fun7():
 	pass
+	print(d("notas de 1 a 10"))
 	edad=int(input(d("edad: ")))
 	nota=float(input(d("nota: ")))
 	pension=0
@@ -162,7 +163,7 @@ def fun8():
 #9)-------------------------------------------------------
 def fun9():
 	poliza=str(input(d("Elige la poliza A o B: ")))
-	print(d("respond con s/n"))
+	print(d("responda con s/n"))
 	bebe=str(input(d("Consume alcohol?: ")))
 	lentes=str(input(d("Usa lentes?: ")))
 	enfermedades=str(input(d("Tiene enfermedades cardiovasculares o diabeticos: ")))
@@ -252,7 +253,9 @@ def eleccion(a):
 		fun9()
 	elif numero==10:
 		fun10()
-	elif numero==11:
+	else:
+		print("no existe es numero de preguntas")
+	"""elif numero==11:
 		fun11()
 	elif numero==12:
 		fun12()
@@ -273,9 +276,8 @@ def eleccion(a):
 	elif numero==20:
 		fun20()
 	elif numero==21:
-		fun21()
-	else:
-		print("no existe es numero de preguntas")
+		fun21()"""
+	
 
 	
 
@@ -284,7 +286,7 @@ while True:
 	print("Menu")
 	imp()
 	print(d("0 para salir"))
-	numero=int(input(d("numero de ejercicio 1-21: ")))
+	numero=int(input(d("numero de ejercicio 1-10: ")))
 	if numero==0:
 		break
 	while True:
