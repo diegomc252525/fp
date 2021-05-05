@@ -160,7 +160,58 @@ def fun8():
 		print(d(),"su bono seria: ",bono2)
 
 #9)-------------------------------------------------------
+def fun9():
+	poliza=str(input(d("Elige la poliza A o B: ")))
+	print(d("respond con s/n"))
+	bebe=str(input(d("Consume alcohol?: ")))
+	lentes=str(input(d("Usa lentes?: ")))
+	enfermedades=str(input(d("Tiene enfermedades cardiovasculares o diabeticos: ")))
+	edad=int(input(d("Cual es su edad?: ")))
+	base1=1200
+	base2=950
+	cantidad1=base1
+	cantidad2=base2
+	if poliza=="A" or poliza=="a":
+		if bebe=="s":
+			cantidad1=cantidad1+base1*0.1
+		if lentes=="s":
+			cantidad1=cantidad1+base1*0.05
+		if enfermedades=="s":
+			cantidad1=cantidad1+base1*0.05
+		if edad>40:
+			cantidad1=cantidad1+base1*0.2
+		else:
+			cantidad1=cantidad1+base1*0.1
+		print(d(),"el presio de su poliza A es: ",cantidad1)
+	elif poliza=="B" or poliza=="b":
+		if bebe=="s":
+			cantidad2=cantidad2+base2*0.1
+		if lentes=="s":
+			cantidad2=cantidad2+base2*0.05
+		if enfermedades=="s":
+			cantidad2=cantidad2+base2*0.05
+		if edad>40:
+			cantidad2=cantidad2+base2*0.2
+		else:
+			cantidad2=cantidad2+base2*0.1
+		print(d(),"El presio de su poliza B es: ",cantidad2)
+
+
 #10)-------------------------------------------------------
+def fun10():
+	costoPK=float(input(d("Cuanto cuesta el pasaje del bus por kilometro: ")))
+	dinero=float(input(d("Cuanto dinero tiene: ")))
+	lugares = [750,800,1200,1800]
+	if (costoPK*2*lugares[3])<=dinero:
+		print(d("usted podra viajar a: Cancun"))
+	elif (costoPK*2*lugares[2])<=dinero:
+		print(d("usted podra viajar a: Acapulco"))
+	elif (costoPK*2*lugares[1])<=dinero:
+		print(d("usted podra viajar a: P.V."))
+	elif (costoPK*2*lugares[0])<=dinero:
+		print(d("usted podra viajar a: Mexico"))
+	else:
+		print(d("usted no podra viajar"))
 #11)-------------------------------------------------------
 #12)-------------------------------------------------------
 #13)-------------------------------------------------------
