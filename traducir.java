@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class tarea13{
+public class traducir{
 
 Scanner sc=new Scanner(System.in);
 public static void main(String []args){
