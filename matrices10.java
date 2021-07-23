@@ -1,6 +1,6 @@
 import static java.lang.System.out;
 
-public class matrices{
+public class matrices10{
 
 public static void main(String []arg){
 int[][] t=m2();int c=21;
